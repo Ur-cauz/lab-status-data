@@ -1,0 +1,958 @@
+{
+ "schema_version": 1,
+ "generated_at": 1795253264,
+ "host": {
+  "status": "online",
+  "uptime_seconds": 80259,
+  "uptime_human": "22h 17m",
+  "cpu_threads": 12
+ },
+ "metrics": {
+  "cpu_percent": 2.7,
+  "load_1m": 1.15,
+  "load_5m": 1.2,
+  "load_15m": 1.51,
+  "mem_percent": 22.6,
+  "swap_percent": 2.8,
+  "disk_percent": 66.7,
+  "temps": {
+   "cpu": 41.6,
+   "nvme": 33.9,
+   "gpu": 36.0
+  }
+ },
+ "containers": [
+  {
+   "name": "App gateway",
+   "category": "Core",
+   "kind": "service",
+   "stack": "core",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "37 minutes",
+   "mem_percent": 22.3
+  },
+  {
+   "name": "Control center",
+   "category": "Core",
+   "kind": "service",
+   "stack": "core",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "17 minutes",
+   "mem_percent": 24.8
+  },
+  {
+   "name": "DNS filter",
+   "category": "Core",
+   "kind": "service",
+   "stack": "core",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "17 minutes",
+   "mem_percent": 25.0
+  },
+  {
+   "name": "Docker API gateway",
+   "category": "Core",
+   "kind": "proxy",
+   "stack": "core",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "38 minutes",
+   "mem_percent": 46.5
+  },
+  {
+   "name": "Web gateway",
+   "category": "Core",
+   "kind": "gateway",
+   "stack": "core",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "17 minutes",
+   "mem_percent": 18.1
+  },
+  {
+   "name": "Chat-ops bot",
+   "category": "Maintenance",
+   "kind": "service",
+   "stack": "bot",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "38 minutes",
+   "mem_percent": 34.2
+  },
+  {
+   "name": "Docker API gateway (updates)",
+   "category": "Maintenance",
+   "kind": "proxy",
+   "stack": "maintenance",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 31.5
+  },
+  {
+   "name": "Update notifier",
+   "category": "Maintenance",
+   "kind": "service",
+   "stack": "maintenance",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 41.0
+  },
+  {
+   "name": "Download client",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 6.3
+  },
+  {
+   "name": "Indexer manager",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 79.5
+  },
+  {
+   "name": "Media requests",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 36.4
+  },
+  {
+   "name": "Media server",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "3 hours",
+   "mem_percent": 99.1
+  },
+  {
+   "name": "Movie library",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 44.2
+  },
+  {
+   "name": "Subtitle manager",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 36.1
+  },
+  {
+   "name": "TV library",
+   "category": "Media",
+   "kind": "service",
+   "stack": "media",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 46.3
+  },
+  {
+   "name": "Host telemetry",
+   "category": "Observability",
+   "kind": "service",
+   "stack": "observability",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "3 hours",
+   "mem_percent": 20.0
+  },
+  {
+   "name": "Metrics dashboards",
+   "category": "Observability",
+   "kind": "service",
+   "stack": "observability",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 61.9
+  },
+  {
+   "name": "Metrics database",
+   "category": "Observability",
+   "kind": "data",
+   "stack": "observability",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "17 minutes",
+   "mem_percent": 12.5
+  },
+  {
+   "name": "Service 1",
+   "category": "Other",
+   "kind": "service",
+   "stack": "core",
+   "state": "exited",
+   "health": "none",
+   "status": "stopped",
+   "uptime": null,
+   "mem_percent": null
+  },
+  {
+   "name": "Service 2",
+   "category": "Other",
+   "kind": "service",
+   "stack": "stack-1",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "38 minutes",
+   "mem_percent": 13.8
+  },
+  {
+   "name": "Service 3",
+   "category": "Other",
+   "kind": "service",
+   "stack": "stack-2",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "2 hours",
+   "mem_percent": 13.8
+  },
+  {
+   "name": "Service 4",
+   "category": "Other",
+   "kind": "service",
+   "stack": "stack-3",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "38 minutes",
+   "mem_percent": 20.1
+  },
+  {
+   "name": "Service 5",
+   "category": "Other",
+   "kind": "service",
+   "stack": "stack-1",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "47 minutes",
+   "mem_percent": 26.0
+  },
+  {
+   "name": "Service 6",
+   "category": "Other",
+   "kind": "service",
+   "stack": "stack-3",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "4 hours",
+   "mem_percent": 40.7
+  },
+  {
+   "name": "Cache",
+   "category": "Private cloud",
+   "kind": "data",
+   "stack": "cloud",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "20 minutes",
+   "mem_percent": 6.4
+  },
+  {
+   "name": "Cloud storage",
+   "category": "Private cloud",
+   "kind": "service",
+   "stack": "cloud",
+   "state": "running",
+   "health": "none",
+   "status": "running",
+   "uptime": "23 minutes",
+   "mem_percent": 28.5
+  },
+  {
+   "name": "Credentials vault",
+   "category": "Private cloud",
+   "kind": "service",
+   "stack": "cloud",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "22 hours",
+   "mem_percent": 38.6
+  },
+  {
+   "name": "Database",
+   "category": "Private cloud",
+   "kind": "data",
+   "stack": "cloud",
+   "state": "running",
+   "health": "healthy",
+   "status": "running",
+   "uptime": "37 minutes",
+   "mem_percent": 41.2
+  }
+ ],
+ "services": [
+  {
+   "name": "App gateway",
+   "category": "Core",
+   "status": "running"
+  },
+  {
+   "name": "Control center",
+   "category": "Core",
+   "status": "running"
+  },
+  {
+   "name": "DNS filter",
+   "category": "Core",
+   "status": "running"
+  },
+  {
+   "name": "Docker API gateway",
+   "category": "Core",
+   "status": "running"
+  },
+  {
+   "name": "Web gateway",
+   "category": "Core",
+   "status": "running"
+  },
+  {
+   "name": "Chat-ops bot",
+   "category": "Maintenance",
+   "status": "running"
+  },
+  {
+   "name": "Docker API gateway (updates)",
+   "category": "Maintenance",
+   "status": "running"
+  },
+  {
+   "name": "Update notifier",
+   "category": "Maintenance",
+   "status": "running"
+  },
+  {
+   "name": "Download client",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Indexer manager",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Media requests",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Media server",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Movie library",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Subtitle manager",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "TV library",
+   "category": "Media",
+   "status": "running"
+  },
+  {
+   "name": "Host telemetry",
+   "category": "Observability",
+   "status": "running"
+  },
+  {
+   "name": "Metrics dashboards",
+   "category": "Observability",
+   "status": "running"
+  },
+  {
+   "name": "Metrics database",
+   "category": "Observability",
+   "status": "running"
+  },
+  {
+   "name": "Cache",
+   "category": "Private cloud",
+   "status": "running"
+  },
+  {
+   "name": "Cloud storage",
+   "category": "Private cloud",
+   "status": "running"
+  },
+  {
+   "name": "Credentials vault",
+   "category": "Private cloud",
+   "status": "running"
+  },
+  {
+   "name": "Database",
+   "category": "Private cloud",
+   "status": "running"
+  }
+ ],
+ "stacks": [
+  {
+   "name": "bot",
+   "state": "healthy",
+   "running": 1,
+   "total": 1,
+   "members": [
+    "Chat-ops bot"
+   ]
+  },
+  {
+   "name": "cloud",
+   "state": "healthy",
+   "running": 4,
+   "total": 4,
+   "members": [
+    "Cache",
+    "Cloud storage",
+    "Credentials vault",
+    "Database"
+   ]
+  },
+  {
+   "name": "core",
+   "state": "degraded",
+   "running": 5,
+   "total": 6,
+   "members": [
+    "App gateway",
+    "Control center",
+    "DNS filter",
+    "Docker API gateway",
+    "Service 1",
+    "Web gateway"
+   ]
+  },
+  {
+   "name": "maintenance",
+   "state": "healthy",
+   "running": 2,
+   "total": 2,
+   "members": [
+    "Docker API gateway (updates)",
+    "Update notifier"
+   ]
+  },
+  {
+   "name": "media",
+   "state": "healthy",
+   "running": 7,
+   "total": 7,
+   "members": [
+    "Download client",
+    "Indexer manager",
+    "Media requests",
+    "Media server",
+    "Movie library",
+    "Subtitle manager",
+    "TV library"
+   ]
+  },
+  {
+   "name": "observability",
+   "state": "healthy",
+   "running": 3,
+   "total": 3,
+   "members": [
+    "Host telemetry",
+    "Metrics dashboards",
+    "Metrics database"
+   ]
+  }
+ ],
+ "networks": [
+  {
+   "name": "edge",
+   "internal": false,
+   "purpose": "Ingress and web UIs",
+   "members": [
+    "Chat-ops bot",
+    "Cloud storage",
+    "Control center",
+    "Credentials vault",
+    "Metrics dashboards",
+    "Service 1",
+    "Update notifier",
+    "Web gateway"
+   ]
+  },
+  {
+   "name": "data",
+   "internal": true,
+   "purpose": "Databases and cache, isolated",
+   "members": [
+    "Cache",
+    "Cloud storage",
+    "Database"
+   ]
+  },
+  {
+   "name": "telemetry",
+   "internal": true,
+   "purpose": "Metrics scraping",
+   "members": [
+    "Chat-ops bot",
+    "DNS filter",
+    "Host telemetry",
+    "Metrics dashboards",
+    "Metrics database",
+    "Service 2"
+   ]
+  },
+  {
+   "name": "docker-api",
+   "internal": true,
+   "purpose": "Control plane to Docker API gateway",
+   "members": [
+    "Chat-ops bot",
+    "Control center",
+    "Docker API gateway"
+   ]
+  },
+  {
+   "name": "docker-api-updates",
+   "internal": true,
+   "purpose": "Update notifier to its Docker API gateway",
+   "members": [
+    "Docker API gateway (updates)",
+    "Update notifier"
+   ]
+  },
+  {
+   "name": "apps",
+   "internal": false,
+   "purpose": "Deployed apps, internet egress only",
+   "members": []
+  },
+  {
+   "name": "media",
+   "internal": false,
+   "purpose": "Media stack",
+   "members": [
+    "Download client",
+    "Indexer manager",
+    "Media requests",
+    "Media server",
+    "Movie library",
+    "Subtitle manager",
+    "TV library",
+    "Web gateway"
+   ]
+  },
+  {
+   "name": "app-gateway",
+   "internal": true,
+   "purpose": "Gateway to app gateway only",
+   "members": [
+    "App gateway",
+    "Web gateway"
+   ]
+  },
+  {
+   "name": "net-1",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "Service 2",
+    "Service 5"
+   ]
+  },
+  {
+   "name": "net-2",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "Service 2"
+   ]
+  },
+  {
+   "name": "net-3",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "DNS filter"
+   ]
+  },
+  {
+   "name": "net-4",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "Chat-ops bot",
+    "Control center",
+    "Service 2",
+    "Service 4"
+   ]
+  },
+  {
+   "name": "net-5",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "Service 3"
+   ]
+  },
+  {
+   "name": "net-6",
+   "internal": false,
+   "purpose": null,
+   "members": [
+    "Service 4",
+    "Service 6"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "Cloud storage",
+   "to": "Cache"
+  },
+  {
+   "from": "Cloud storage",
+   "to": "Database"
+  },
+  {
+   "from": "Control center",
+   "to": "Docker API gateway"
+  },
+  {
+   "from": "Metrics dashboards",
+   "to": "Metrics database"
+  },
+  {
+   "from": "Metrics database",
+   "to": "Host telemetry"
+  },
+  {
+   "from": "Web gateway",
+   "to": "App gateway"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Cloud storage"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Control center"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Credentials vault"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Download client"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Indexer manager"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Media requests"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Media server"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Metrics dashboards"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Movie library"
+  },
+  {
+   "from": "Web gateway",
+   "to": "Subtitle manager"
+  },
+  {
+   "from": "Web gateway",
+   "to": "TV library"
+  }
+ ],
+ "ingress": [
+  "Web gateway"
+ ],
+ "incidents": [
+  {
+   "title": "Service 1 is stopped",
+   "severity": "high",
+   "state": "active",
+   "opened_at": 1795108631,
+   "updated_at": 1795253254,
+   "resolved_at": null
+  },
+  {
+   "title": "A service is failing health checks",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795250094,
+   "updated_at": 1795250415,
+   "resolved_at": 1795250480
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795249579,
+   "updated_at": 1795249644,
+   "resolved_at": 1795249709
+  },
+  {
+   "title": "A service is failing health checks",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795248813,
+   "updated_at": 1795248874,
+   "resolved_at": 1795248940
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795248750,
+   "updated_at": 1795248750,
+   "resolved_at": 1795248813
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795247205,
+   "updated_at": 1795247205,
+   "resolved_at": 1795247270
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795246762,
+   "updated_at": 1795246762,
+   "resolved_at": 1795246824
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795246699,
+   "updated_at": 1795246699,
+   "resolved_at": 1795246735
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795246637,
+   "updated_at": 1795246637,
+   "resolved_at": 1795246648
+  },
+  {
+   "title": "A service is failing health checks",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795245729,
+   "updated_at": 1795245729,
+   "resolved_at": 1795245794
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795245029,
+   "updated_at": 1795245029,
+   "resolved_at": 1795245090
+  },
+  {
+   "title": "A service is failing health checks",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795244769,
+   "updated_at": 1795244834,
+   "resolved_at": 1795244899
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795243879,
+   "updated_at": 1795244009,
+   "resolved_at": 1795244074
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795243814,
+   "updated_at": 1795243814,
+   "resolved_at": 1795243879
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795243050,
+   "updated_at": 1795243050,
+   "resolved_at": 1795243114
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795242095,
+   "updated_at": 1795242095,
+   "resolved_at": 1795242160
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795241969,
+   "updated_at": 1795241969,
+   "resolved_at": 1795242016
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795241343,
+   "updated_at": 1795241391,
+   "resolved_at": 1795241454
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795241230,
+   "updated_at": 1795241230,
+   "resolved_at": 1795241238
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795124996,
+   "updated_at": 1795124996,
+   "resolved_at": 1795125004
+  },
+  {
+   "title": "Cloud storage is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795124689,
+   "updated_at": 1795124689,
+   "resolved_at": 1795124704
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795122729,
+   "updated_at": 1795122729,
+   "resolved_at": 1795122789
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795122729,
+   "updated_at": 1795122729,
+   "resolved_at": 1795122789
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795122729,
+   "updated_at": 1795122729,
+   "resolved_at": 1795122789
+  },
+  {
+   "title": "A service is stopped",
+   "severity": "high",
+   "state": "resolved",
+   "opened_at": 1795122729,
+   "updated_at": 1795122729,
+   "resolved_at": 1795122789
+  }
+ ],
+ "backup": {
+  "status": "success",
+  "last_success_at": 1795210368,
+  "last_success_age_seconds": 42896,
+  "restore_test": {
+   "status": "never",
+   "last_run_at": null,
+   "age_seconds": null
+  }
+ },
+ "apps": [],
+ "summary": {
+  "containers_total": 28,
+  "running": 27,
+  "healthy": 8,
+  "unhealthy": 0,
+  "stopped": 1,
+  "services_total": 22,
+  "services_ok": 22,
+  "alarms_active": 1,
+  "alarms_unacked": 1
+ }
+}
